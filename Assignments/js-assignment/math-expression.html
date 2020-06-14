@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: MATH EXPRESSIONS ::.</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //// 1
+        // document.write('<h2>Addition</h2>')
+        // var _num1 = parseInt(prompt('Enter First Number for Addition'))
+        // var _num2 = parseInt(prompt('Enter Second Number for Addition'))
+        // var _res = _num1 + _num2;
+        // document.write('Sum of '+_num1+' and '+_num2+' is ' +  _res + '<br>')
+
+        // //// 2 (Sub)
+        // document.write('<h2>Subtraction</h2>')
+        // var _num1 = parseInt(prompt('Enter Highest Number for  Subtraction'))
+        // var _num2 = parseInt(prompt('Enter Lowest Number for Subtraction'))
+        // var _res = _num1 - _num2;
+        // document.write('Sub of '+_num1+' and '+_num2+' is ' +  _res + '<br>')
+
+        // //// 2 (Mult)
+        // document.write('<h2>Multiplication</h2>')
+        // var _num1 = parseInt(prompt('Enter First Number for  Multiplication'))
+        // var _num2 = parseInt(prompt('Enter Second Number for Multiplication'))
+        // var _res = _num1 * _num2;
+        // document.write('Multiple of '+_num1+' and '+_num2+' is ' +  _res + '<br>')
+        
+        //  //// 2 (Module)
+        // document.write('<h2>Module</h2>')
+        // var _num1 = parseInt(prompt('Enter First Number for Module'))
+        // var _num2 = parseInt(prompt('Enter Second Number for Module'))
+        // var _res = _num1 % _num2;
+        // document.write('Module of '+_num1+' and '+_num2+' is ' +  _res + '<br>')
+
+        //// 3
+        var _initVal;
+        document.write('Value after variable declaration is: ' + _initVal + '<br>')
+        _initVal = 5;
+        document.write('Initial value: ' + _initVal + '<br>')
+        _initVal = parseInt(_initVal + 1);
+        document.write('Value after increment is: ' + _initVal + '<br>')
+        _initVal = parseInt(_initVal + 7);
+        document.write('Value after Addition is: ' + _initVal + '<br>')
+        _initVal= parseInt(_initVal - 1);
+        document.write('Value after decrement is: ' + _initVal + '<br>')
+        _initVal= parseInt(_initVal / 3);;
+        document.write('The remainder is: ' + _initVal+ '<br>')
+
+        //// 4
+        var ticketPrice = 600, res = 0;
+        document.write('<br><br>')
+        var qty = parseInt(prompt('how many ticket you want to buy'))
+        res = parseInt(ticketPrice * qty);
+        document.write('Total cost to buy '+ qty +' tickets to a movies is: ' + res)
+
+        //// 5
+        document.write('<br><br>')
+        var tableOf = parseInt(prompt('Enter Table Number'))
+        document.write('<u> Table of '+ tableOf + '</u> <br>')
+        for(var i = 1; i <= 10; i++){
+            document.write(tableOf +'x'+ i +'=' + parseInt(tableOf * i) + '<br>' )
+        }
+
+        //// 6
+        var cel = parseInt(prompt('Enter Celcius Temp'))
+        var fahConvert = (cel*9/5) + 32;
+        document.write('<br><br> '+cel+ '<sup>o</sup>C is '+fahConvert+'<sup>o</sup>F')
+        var fah = parseInt(prompt('Enter Fahrenheit Temp'))
+        celConvert = (fah-32)*5/9;
+        document.write('<br>'+fah+ '<sup>o</sup>F is '+celConvert+'<sup>o</sup>C')
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: VARIABLES FOR NUMBERS ::.</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //// 1
+        var age = 25;
+        alert('I am '+ age + ' years old');
+        //// 2
+        var temp = parseInt(localStorage.getItem('val'))
+        if(temp > 0){
+            temp = temp + 1;
+            localStorage.setItem('val', temp);
+            alert("\n"+"Your browser has visited this page               \n"
+            +"                              "+temp+"\n"
+            +"                          time(s)."+"\n"+"\n"
+            );
+        }
+        else {
+            temp = 1;
+            localStorage.setItem('val', temp);
+            alert("\n"+"Your browser has visited this page               \n"
+            +"                              "+temp+"\n"
+            +"                          time(s)."+"\n"+"\n"
+            );
+        }
+        //// 3
+        var birthYear = 1992;
+        document.write('My birthday year is '+ birthYear + '<br/>')
+        document.write('Data Type of my declared variable is number <br/><br/>')
+        //// 4
+        var vstName, prdTitle, qty;
+        vstName = prompt('Enter Name');
+        prdTitle = prompt('Enter Product title');
+        qty = prompt('Quantity');
+
+        document.write(vstName +' ordered '+ qty +' '+ prdTitle +' on XYZ Clothing store');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
