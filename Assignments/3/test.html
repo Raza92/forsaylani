@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $('input[type="submit"]').prop('disabled', true);
+
+            checkVal();
+
+        });
+
+        function checkVal() {
+            if ($('[id$=txt1]').val() != '') {
+                if ($('[id$=ddl1]').val() != '-1') {
+                    if ($('[id$=ddl2]').val() != '-1') {
+                        $('input[type="submit"]').prop('disabled', false);
+                    }
+                    else {
+                        $('input[type="submit"]').prop('disabled', true)
+                    }
+                }
+                else {
+                    $('input[type="submit"]').prop('disabled', true)
+                }
+            }
+            else {
+                $('input[type="submit"]').prop('disabled', true)
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" name="" id="txt1" onkeypress="checkVal()">
+
+    <select name="" id="ddl1" onchange="checkVal()">
+        <option value="-1">na</option>
+        <option value="1">1</option>
+    </select>
+
+    <select name="" id="ddl2" onchange="checkVal()">
+        <option value="-1">na</option>
+        <option value="1">1</option>
+    </select>
+
+    <input type="submit" id="btn1" value="button">
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: MATH EXPRESSION - 2 ::.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+</body>
+</html>
+
+<script>
+    // var number = prompt('Enter your number');
+    // document.write(' <b> Result </b> <br><br> The value of a is: ' + number)
+
+    // document.write('<br><br>................................')
+
+    // document.write('<br><br> The value of ++a is: '+ ++number)
+    // document.write('<br>Now the value of ++a is: '+ number)
+
+    // document.write('<br><br> The value of a++ is: '+ number++)
+    // document.write('<br>Now the value of a++ is: '+ number)
+
+    // document.write('<br><br> The value of --a is: '+ --number)
+    // document.write('<br>Now the value of --a is: '+ number)
+
+    // document.write('<br><br> The value of a-- is: '+ number--)
+    // document.write('<br>Now the value of a-- is: '+ number + '<br><br>')
+
+    // var a = 1, b = 2;
+    // document.write('a is: '+ a + '<br>')
+    // document.write('b is: '+ b + '<br>')
+
+    // var result = --a - --b + ++b + b--;
+    // document.write('result is: '+ result + '<br><br>')
+
+    // document.write('<u>Explain the output at each stage:</u>');
+    // a = 1, b = 2;
+    // res = --a;
+    // document.write('<br> --a; '+ res + '<br>');
+    // a = 1, b = 2;
+    // res = --a - --b;
+    // document.write('--a - --b; '+ res + '<br>');
+    // a = 1, b = 2;
+    // res = --a - --b + ++b;
+    // document.write('--a - --b + ++b; '+ res + '<br>');
+    // a = 1, b = 2;
+    // res = --a - --b + ++b + b--;
+    // document.write('--a - --b + ++b + b--; '+ res + '<br>');
+
+    // // 3
+    // // Write a program that takes input a name from user & greet the user.
+    // var myName = prompt('Enter your name');
+    // document.write('<br><br> <b> Welcome : </b>' + myName)
+
+    // document.write('<br><br>')
+    // var tableOf = parseInt(prompt('Enter Table Number'))
+    // if (isNaN(tableOf)) {
+    //     tableOf = 5;
+    //         document.write('<u> Table of :' + tableOf + '</u> <br>')
+    //         for (var i = 1; i <= 10; i++) {
+    //             document.write(tableOf + 'x' + i + '=' + parseInt(tableOf * i) + '<br>')
+    //         }
+    // }
+    // else {
+    //     document.write('<u> Table of :' + tableOf + '</u> <br>')
+    //     for (var i = 1; i <= 10; i++) {
+    //         document.write(tableOf + 'x' + i + '=' + parseInt(tableOf * i) + '<br>')
+    //     }
+    // }
+
+    // 6 
+    var firstSubject = prompt('Enter First Subject Name')
+    var secondSubject = prompt('Enter Second Subject Name')
+    var thirdSubject = prompt('Enter Third Subject Name')
+    var totalMarks = 100;
+    var firstSubjectObtainMarks = 0
+    firstSubjectObtainMarks = prompt('Enter First Subject Marks')
+    var secondSubjectObtainMarks = 0
+    secondSubjectObtainMarks = prompt('Enter Second Subject Marks')
+    var thirdSubjectObtainMarks = 0
+    thirdSubjectObtainMarks = prompt('Enter Third Subject Marks')
+
+    document.write(`<br><br><table>
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>` + firstSubject +` </td>
+            <td>` + totalMarks +` </td>
+            <td>` + firstSubjectObtainMarks + `</td>
+            <td>` + firstSubjectObtainMarks + `%</td>
+        </tr>
+        <tr>
+            <td>` + secondSubject +`</td>
+            <td>` + totalMarks +`</td>
+            <td>` + secondSubjectObtainMarks + `</td>
+            <td>` + secondSubjectObtainMarks + `%</td>
+        </tr>
+        <tr>
+            <td>` + thirdSubject +`</td>
+            <td>` + totalMarks +`</td>
+            <td>` + thirdSubjectObtainMarks + `</td>
+            <td>` + thirdSubjectObtainMarks + `%</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>` + totalMarks*3 + `</td>
+            <td>` + (+firstSubjectObtainMarks + +secondSubjectObtainMarks + +thirdSubjectObtainMarks) + `</td>
+
+            <td>` + ((+firstSubjectObtainMarks + 
+                     +secondSubjectObtainMarks + 
+                     +thirdSubjectObtainMarks) / (totalMarks*3) * 100).toFixed(2)  + `%</td>
+
+        </tr>
+    </table>`)
+
+</script>

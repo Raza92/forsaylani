@@ -1,5 +1,3 @@
-
-
 var THEMEMASCOT = {};
 
 (function($) {
@@ -159,6 +157,8 @@ var THEMEMASCOT = {};
 
         init: function() {
             THEMEMASCOT.bmiCalculator.init();
+            THEMEMASCOT.initialize.TM_datePicker();
+            // THEMEMASCOT.initialize.TM_loadBSParentModal();
             THEMEMASCOT.initialize.TM_demoSwitcher();
             THEMEMASCOT.initialize.TM_platformDetect();
             THEMEMASCOT.initialize.TM_onLoadModal();
@@ -172,6 +172,15 @@ var THEMEMASCOT = {};
             THEMEMASCOT.initialize.TM_equalHeightDivs();
         },
 
+
+        /* ---------------------------------------------------------------------- */
+        /* ------------------------------ Date Picker  -------------------------- */
+        /* ---------------------------------------------------------------------- */
+        TM_datePicker: function() {
+            $( ".date-picker" ).datepicker();
+            $( ".time-picker" ).timepicker();
+            $( ".datetime-picker" ).datetimepicker();
+        },
 
         /* ---------------------------------------------------------------------- */
         /* ------------------------ Bootstrap Parent Modal  --------------------- */
@@ -700,7 +709,32 @@ var THEMEMASCOT = {};
             });
         },
 
-    
+        /* ---------------------------------------------------------------------- */
+        /* ------------------------------ Nivo Lightbox ------------------------- */
+        /* ---------------------------------------------------------------------- */
+        TM_nivolightbox: function() {
+            $('a[data-lightbox-gallery]').nivoLightbox({
+                effect: 'fadeScale'
+            });
+        },
+
+
+
+
+        /* ---------------------------------------------------------------------- */
+        /* ----------------------------- Fit Vids ------------------------------- */
+        /* ---------------------------------------------------------------------- */
+        TM_fitVids: function() {
+            $body.fitVids();
+        },
+
+        /* ---------------------------------------------------------------------- */
+        /* ----------------------------- YT Player for Video -------------------- */
+        /* ---------------------------------------------------------------------- */
+        TM_YTPlayer: function() {
+            $(".player").mb_YTPlayer();
+        },
+
 
     };
 
@@ -1898,6 +1932,7 @@ var THEMEMASCOT = {};
     THEMEMASCOT.windowOnLoad = {
         init: function() {
             var t = setTimeout(function() {
+                THEMEMASCOT.initialize.TM_wow();
                 THEMEMASCOT.widget.TM_twittie();
                 THEMEMASCOT.initialize.TM_magnificPopup_lightbox();
                 THEMEMASCOT.initialize.TM_preLoaderOnLoad();
@@ -1924,7 +1959,7 @@ var THEMEMASCOT = {};
     THEMEMASCOT.windowOnResize = {
         init: function() {
             var t = setTimeout(function() {
-                // THEMEMASCOT.initialize.TM_equalHeightDivs();
+                THEMEMASCOT.initialize.TM_equalHeightDivs();
                 THEMEMASCOT.initialize.TM_resizeFullscreen();
             }, 400);
         }
