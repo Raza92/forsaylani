@@ -12,8 +12,77 @@
 </html>
 <script>
     // // 1
+    var arr = [];
     var studentName = {
         id: 0,
         name: ''
     }
+
+    // // 3
+    var stringArray = new Array('Raza', 'Sarwar')
+    var numberArray = new Array(1, 2)
+    var boolenArray = new Array(true, false)
+    var mixedArray = new Array(true, 1, 'Hi!')
+    
+    var qualification = new Array('SSC', 'HSC', 'BCS', 'BS', 'BS', 'BCOM', 'MS', 'M.Phil.', 'PhD')
+    
+    var stdNameArray = new Array(3);
+    var stdScoreArray = new Array(3);
+    stdScoreArray[1] = 320;
+    stdScoreArray[2] = 230;
+    stdScoreArray[3] = 480;
+
+    var totalScore = 500;
+
+    // for(var i = 1; i <= 3; i++){
+    //     var stdName = prompt('Enter ' + i + ' Student Name')
+    //     stdNameArray[i] = stdName;
+    //     document.write('Score of '+ stdNameArray[i] + ' is '
+    //      + stdScoreArray[i] + '. Percentage: '+ +stdScoreArray[i] / totalScore * 100 + '% <br>')
+    // }
+
+    var colorNameArray = ['red', 'green', 'blue']
+    document.write('<br> a) ' + colorNameArray + ' <br>')
+
+    var userInputInitialColor = prompt('Which Color you want to add on first position')
+    colorNameArray.unshift(userInputInitialColor);
+    document.write('<br> b) ' + colorNameArray + ' <br>')
+    
+    // var userInputEndColor = prompt('Which Color you want to add on End position')
+    // colorNameArray.splice(4, 0, userInputEndColor) ;
+    // document.write('<br> c) ' + colorNameArray + ' <br>')
+
+    // var userInputInitialColor = prompt('How many Color you want to add on first position')
+    // for(var i = 1; i <= +userInputInitialColor; i++){
+    //     var colorName = prompt('Enter ' + i + ' Name Of the color')
+    //     colorNameArray.unshift(colorName);
+    // }
+    // document.write('<br> d) ' + colorNameArray + ' <br>')
+
+    // colorNameArray.splice(0, 1) ;
+    // document.write('<br> e) ' + colorNameArray + ' <br>')
+
+    // colorNameArray.splice(colorNameArray.length - 1, 1) ;
+    // document.write('<br> f) ' + colorNameArray + ' <br>')
+
+    // var userInputIndex = prompt('Which position you want to add the color')
+    // var colorName = prompt('Name the color you wan to add')
+    // colorNameArray.splice(userInputIndex, 0, colorName) ;
+    // document.write('<br> g) ' + colorNameArray + ' <br>')
+
+    // var userInputIndex = prompt('Which position you want to Delete the color')
+    // colorNameArray.splice(userInputIndex, 1) ;
+    // document.write('<br> h) ' + colorNameArray + ' <br>')
+
+    var stdCount = prompt('Enter the quantity of the student')
+    for(var i = 1; i <= +stdCount; i++){
+        var stdScore = prompt('Enter ' + i +' Student Score')
+        stdScoreArray[i] = stdScore
+    }
+
+    document.write('<br>Scores of Students: '+ stdScoreArray)
+    stdScoreArray.sort();
+    document.write('<br>Sorted Scores of Students: '+ stdScoreArray)
+
+
 </script>
