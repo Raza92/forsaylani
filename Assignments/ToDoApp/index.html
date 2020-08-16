@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAcuUQkDWGKrGSO0--ZdJXZMHv3pjt8O4M",
+          authDomain: "forsaylani-de829.firebaseapp.com",
+          databaseURL: "https://forsaylani-de829.firebaseio.com",
+          projectId: "forsaylani-de829",
+          storageBucket: "forsaylani-de829.appspot.com",
+          messagingSenderId: "1063437492230",
+          appId: "1:1063437492230:web:e7ea6e0f6349a7fae96387",
+          measurementId: "G-WK00W3QWJL"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+      </script>
+
+    <title>.:: ToDo App ::.</title>
+</head>
+
+<body>
+    <div>
+        <h1>ToDo App</h1>
+    </div>
+    <div>
+        <span>Name: </span> <input type="text" name="" id="name">
+        <span>Registration #</span> <input type="text" name="" id="regno">
+        <button id="btnSaveAndGet" onclick="onSaveButtonClick()">Get Data</button>
+    </div>
+
+    <div>
+        <p id="demo"></p>
+    </div>
+</body>
+
+</html>
